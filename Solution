@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    printf("Enter the total amount X in rupees: ");
+    scanf("%d", &X);
+    printf("Enter the cost of one chocolate Y in rupees: ");
+    scanf("%d", &Y);
+
+    if (Y <= 0) {
+        printf("The cost of one chocolate should be greater than zero.\n");
+    } else {
+        int maxChocolates = X / Y;
+        printf("Chef can buy a maximum of %d chocolates.\n", maxChocolates);
+    }
